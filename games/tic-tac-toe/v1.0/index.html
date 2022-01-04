@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpor,t"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Velha - ENIAC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1 class="game-title">Jogo da Velha</h1>
+        <p id="player_turn">VEZ DO JOGADOR 1</p>
+            <div>
+                <img src="" alt="">
+
+            </div>
+        <div id="game-center">
+            <div>JOGADOR 01</div>
+            <div class="game-container">
+                <div id="00" data-cell-index="0" class="cell" onclick="player_played('0','0')"></div>
+                <div id="01" data-cell-index="1" class="cell" onclick="player_played('0','1')"></div>
+                <div id="02" data-cell-index="2" class="cell" onclick="player_played('0','2')"></div>
+                <div id="10" data-cell-index="3" class="cell" onclick="player_played('1','0')"></div>
+                <div id="11" data-cell-index="4" class="cell" onclick="player_played('1','1')"></div>
+                <div id="12" data-cell-index="5" class="cell" onclick="player_played('1','2')"></div>
+                <div id="20" data-cell-index="6" class="cell" onclick="player_played('2','0')"></div>
+                <div id="21" data-cell-index="7" class="cell" onclick="player_played('2','1')"></div>
+                <div id="22" data-cell-index="8" class="cell" onclick="player_played('2','2')"></div>
+            </div>
+            <div>JOGADOR 02</div>
+        </div>
+        <h2 class="game-status"></h2>
+        <button class="game-restart" onclick="resetar()">Resetar Jogo</button>
+    </section>
+<script src="js/script.js"></script>
+</body>
+UHH 
