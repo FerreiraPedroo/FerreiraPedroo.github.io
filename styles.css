@@ -6,10 +6,16 @@
   box-sizing: border-box;
   user-select: none;
 }
-
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+  padding: 10px;
+}
 header {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 header h1 {
   width: 100%;
@@ -38,8 +44,8 @@ nav {
 }
 
 article {
-  width         : 320px;
-  margin        : 10px;
+  min-width     : 300px;
+  width         : 300px;
   padding       : 10px;
   border-radius : 8px;
   border        : 2px solid #66757F;

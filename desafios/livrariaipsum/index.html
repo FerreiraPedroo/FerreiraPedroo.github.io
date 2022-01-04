@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="asets/favicon.ico">
+    <title>LIVRARIA IPSUM</title>
+</head>
+
+<body>
+    <div>
+        <div id="top">
+            <span id="page-title">LIVRARIA IPSUM</span>
+        </div>
+        <div id="separate-line-1" class="separate-line">
+            <p></p>
+        </div>
+        <div id="center">
+            <div id="center-book">
+                <span id="book-title-select">SELECIONE UM LIVRO</span>
+                <div id="choose-Book">
+                    <p id="pag-letter-random-select" hidden>PÁGINA SELECIONADA:&nbsp; nº&nbsp;
+                        <span id="pageId"></span><br><br>
+                        <span id="letter-select">LETRA SELECIONADA: <span id="letterId"></span></span><br><br>
+                    </p>
+                    <img src="asets/mussum.png" id="book-0" class="book" onclick="selectBook(0)" />
+                    <img src="asets/lorem.png" id="book-1" class="book" onclick="selectBook(1)" />
+                    <img src="asets/web2.0.png" id="book-2" class="book" onclick="selectBook(2)" />
+                    <img src="asets/bacon.png" id="book-3" class="book" onclick="selectBook(3)" />
+                    <img src="asets/cat.png" id="book-4" class="book" onclick="selectBook(4)" />
+                </div>
+            </div>
+            <div id="play">
+                <input type="button" id="play-button" value="JOGAR" onclick="playStart()"><br>
+                <div id="result">
+                </div>
+            </div>
+        </div>
+        
+        <div id="separate-line-2" class="separate-line" hidden>
+            <p></p>
+        </div>
+        
+        <div id="choose-page-letter">
+            <div id="choose-page">
+                <p id="pag-letter-random-select" hidden>PAGINA ESCOLHIDA:&nbsp; nº&nbsp;<span id="pageId"></span>&nbsp;&nbsp; <span id="letter-select">LETRA ESCOLHIDA: </span>&nbsp;<span id="letterId"></span></p>
+                <span id="page-statistics"></span>
+                <p id="page-select-text"></p><br>
+            </div>
+            <div id="choose-qtd-players">
+                <label id="qtdPlayers" hidden>QUANTIDADE DE JOGADORES: &nbsp;<input type="number" id="playersId-value" step="1">&nbsp;<input type="button" id="playersId-button" value="ESCOLHER" onclick="selectQtdPlayers()"></label>
+                <p><br></p>
+                <div>
+                    <div id="players">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
