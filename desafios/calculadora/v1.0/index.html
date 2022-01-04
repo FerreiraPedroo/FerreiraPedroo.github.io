@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculadora v1</title>
+</head>
+
+<body>
+    <header>
+        <div id="titulo">Calc0</div>
+    </div>
+</header>
+<div>
+    <div id="column-display">
+        <div id="column-display-lcd">0</div>
+    </div>
+        <div id="column-all">
+            <div>
+                <div class="column">
+                    <button class="button" id="C" onclick="digit('C')">C</button>
+                    <button class="button" id="/" onclick="digit(`⇦`)">⇦</button>
+                    <button class="button" id="*" onclick="digit(`/`)">/</button>
+                </div>
+                <div class="column">
+                    <button class="button" id="7" onclick="digit(7)">7</button>
+                    <button class="button" id="8" onclick="digit(8)">8</button>
+                    <button class="button" id="9" onclick="digit(9)">9</button>
+                </div>
+                <div class="column">
+                    <button class="button" id="4" onclick="digit(4)">4</button>
+                    <button class="button" id="5" onclick="digit(5)">5</button>
+                    <button class="button" id="6" onclick="digit(6)">6</button>
+                </div>
+                <div class="column">
+                    <button class="button" id="1" onclick="digit(1)">1</button>
+                    <button class="button" id="2" onclick="digit(2)">2</button>
+                    <button class="button" id="3" onclick="digit(3)">3</button>
+                </div>
+                <div class="column">
+                    <button class="button-zero" id="0" onclick="digit(0)">0</button>
+                    <button class="button" id="," onclick="digit('.')">.</button>
+                </div>
+            </div>
+            <div class="column-right">
+                <button class="button" id="-" onclick="digit('*')">*</button>
+                <button class="button" id="+" onclick="digit('-')">-</button>
+                <button class="button" id="+" onclick="digit('+')">+</button>
+                <button class="button-equal" id="=" onclick="digit('=')">=</button>
+            </div>
+        </div>
+    </div> 
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator-v2.css">
+    <title>Calculadora v1 - MOD2</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">Calc0 - Mod2</div>
+    </div>
+    </header>
+    <div>
+        <div id="column-display">
+            <div id="column-display-lcd"></div>
+        </div>
+        <div id="column-all">
+            <div>
+                <div class="column">
+                    <button class="button" id="C" onclick="clear2()">C</button>
+                    <button class="button" id="/" onclick="remove()">⇦</button>
+                    <button class="button" id="*" onclick="mathOperatorOther(`/`)">/</button>
+                </div>
+                <div class="column">
+                    <button class="button" id="7" onclick="mathNumber(7)">7</button>
+                    <button class="button" id="8" onclick="mathNumber(8)">8</button>
+                    <button class="button" id="9" onclick="mathNumber(9)">9</button>
+                </div>
+                <div class="column">
+                    <button class="button" id="4" onclick="mathNumber(4)">4</button>
+                    <button class="button" id="5" onclick="mathNumber(5)">5</button>
+                    <button class="button" id="6" onclick="mathNumber(6)">6</button>
+                </div>
+                <div class="column">
+                    <button class="button" id="1" onclick="mathNumber(1)">1</button>
+                    <button class="button" id="2" onclick="mathNumber(2)">2</button>
+                    <button class="button" id="3" onclick="mathNumber(3)">3</button>
+                </div>
+                <div class="column">
+                    <button class="button-zero" id="0" onclick="mathNumber(0)">0</button>
+                    <button class="button" id="," onclick="point('.')">.</button>
+                </div>
+            </div>
+            <div class="column-right">
+                <button class="button" id="-" onclick="mathOperatorOther('*')">*</button>
+                <button class="button" id="+" onclick="mathOperatorMinus('-')">-</button>
+                <button class="button" id="+" onclick="mathOperatorOther('+')">+</button>
+                <button class="button-equal" id="=" onclick="calculate('=')">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator-v2.js"></script>    
+</body>
+
+</html>
