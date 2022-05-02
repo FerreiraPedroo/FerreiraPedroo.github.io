@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/geradorMapa.css">
+  <title>Venture</title>
+</head>
+
+<body>
+
+  <div style="display: flex; flex-direction: column; align-items: flex-start;">
+    Gerador de Mapa:
+    <p> Matriz X - Colunas</p><input type="number" id="matrizColuna" value="5" max="25" min="1">
+    <p> Matriz X - Linhas</p><input type="number" id="matrizLinha" value="5" max="25" min="1">
+    <input type="button" onclick="desenharMapa('mapa-rendenizado')" value="Gerar">
+    <br />
+    <div id="mapa-rendenizado">
+
+    </div>
+
+  </div>
+  <script src="js/core.js"></script>
+  <script src="js/geradorMapa.js"></script>
+
+</body>
+
+</html>

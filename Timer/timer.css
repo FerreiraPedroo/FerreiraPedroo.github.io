@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /*border: 1px solid green;*/
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    
+    color: white;
+    border:5px solid greenyellow;
+    /*box-shadow: 0px 0px 20px greenyellow;*/
+    background-color: green;
+}
+/* ---------------------------------- */
+#title {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:monospace;
+    font-size: 24px;
+
+    color: darkgreen;
+    text-shadow: 0px 0px 15px lime;
+    background-color:gold;
+    /*box-shadow: 0px 0px 15px 2px goldenrod;*/
+
+}
+/* ---------------------------------- */
+#body-center{
+    width: 100%;
+
+}
+#div-timer {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family:monospace;
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color:green;
+    border-radius: 10px 10px 10px 10px;
+
+    background-color:gold;
+    /*box-shadow: 0px 0px 15px 3px goldenrod;*/
+}
+/* ---------------------------------- */
+#center {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;        
+}
+#button-all-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.select-set-number{
+   width: 16px;
+    height: 32px;
+    background-color: wheat;
+    border: 1px solid gray;
+    font-size:32px;
+
+}
+.set-number {
+    width: 32px;
+    font-size: 30px;
+}
+/* ---------------------------------- */
+#button-all-action {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.button-action {
+    height: 32px;
+    margin: 5px 12px 5px; 
+    font-style:oblique;
+    font-weight: bolder;
+    border-radius: 5px;
+    color:darkgreen;
+    
+    border-color: gold;
+    border-style: groove;
+    background-color: greenyellow;
+    /*box-shadow: 0 0 10px mediumseagreen;*/
+    text-shadow: 0 0 5px mediumseagreen;
+}
+.button-action:disabled{
+background-color: green;
+border-color: mediumseagreen;
+
+}

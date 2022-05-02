@@ -44,6 +44,9 @@ nav {
 }
 
 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-width     : 300px;
   width         : 300px;
   padding       : 10px;

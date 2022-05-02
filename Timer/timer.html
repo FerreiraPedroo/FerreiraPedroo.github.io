@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="timer.css">
+    <title>Timer v1</title>
+</head>
+
+<body id="frame">
+
+    <div class="body">
+        <div id="title">CHRONO TIMER</div>
+
+        <div id="body-center">
+            <p id="div-timer"><span id="timer-count-0">00:00:00 00</span>
+            </p>
+            <div id="center">
+                <div>HH : MM : SS &nbsp; xx
+
+                    <div id="button-all-number">
+                        <input type="number" id="button-change-hour-0" class="select-set-number" min="0" max="24"
+                            id="hour" value="0" onclick="changeSetNumber(this.parentNode,0)">
+                        <span id="set-hour-number-0" class="set-number">00</span>
+
+                        <input type="number" id="button-change-minute-0" class="select-set-number" min="0" max="60"
+                            id="minute" value="0" onclick="changeSetNumber(this.parentNode,0)">
+                        <span id="set-minute-number-0" class="set-number">00</span>
+
+                        <input type="number" id="button-change-second-0" class="select-set-number" min="0" max="60"
+                            id="second" value="0" onclick="changeSetNumber(this.parentNode,0)">
+                        <span id="set-second-number-0" class="set-number">00</span>
+
+                        &nbsp;&nbsp;<input type="number" id="button-change-decimalsecond-0" class="select-set-number" min="0" max="99"
+                            id="decimalsecond" value="0" onclick="changeSetNumber(this.parentNode,0)">
+                        <span id="set-decimalsecond-number-0" class="set-number">00</span>
+                    </div>
+                </div>
+                <div id="button-all-action">
+                    <button class="button-action" id="button-settimer-0" onclick="settimeButtonVerific(this.parentNode,0)">SET
+                        TIMER</button>
+                    <button class="button-action" id="button-start-0" onclick="startButtonVerific(this.parentNode,0)">START
+                        TIMER</button>
+                    <button class="button-action" id="button-stop-0" disabled="true" onclick="stopButtonVerific(this.parentNode,0)">STOP
+                        TIMER</button>
+                    <button class="button-action" id="button-reset-0" disabled="true" onclick="resetButtonVerific(this.parentNode,0)">RESET
+                        TIMER</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+
+</html>

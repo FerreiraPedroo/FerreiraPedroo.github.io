@@ -1,0 +1,15 @@
+.matriz-linha {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 25px;
+  border: 1px solid silver;
+}
+.matriz-coluna {
+  width: 25px;
+  height: 25px;
+  border: 1px solid blue;
+}
+.div-selected{
+  background-color: blue;
+}
