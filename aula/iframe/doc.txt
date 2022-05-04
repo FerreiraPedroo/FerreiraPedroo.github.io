@@ -1,0 +1,47 @@
+
+
+
+
+
+ATRIBUTOS
+allowfullscreen (boolean)
+scrooling= auto | yes | no
+frameborder= 0 | 1
+---------------------------------------------------------------------------------
+name = ""
+  <iframe src="./audio/index.html" name="iframe-exemplo"></iframe>
+  <a href="./video/index.html" target="iframe-exemplo">Mudar Iframe</a>
+
+  <form target="iframe-exemplo">
+---------------------------------------------------------------------------------
+
+
+<iframe src="./video/index.html" width="480" height="400" scrolling="no" frameborder="1" name="Audio - HMTL5"></iframe>
+<iframe src="./audio/index.html" ></iframe>
+
+<iframe src="https://www.youtube.com/embed/9P15WoXIzV4" ></iframe>
+
+
+<br/><br/>
+TWITTER
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" title="Twitter Tweet" style="position: static; visibility: visible; width: 551px; height: 625px; display: block; flex-grow: 1;" src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NwYWNlX2NhcmQiOnsiYnVja2V0Ijoib2ZmIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1521550153827631106&amp;lang=pt&amp;origin=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;sessionId=02576fa6b7fcb919677e65e45c4a0fd2faaefac2&amp;theme=light&amp;widgetsVersion=c8fe9736dd6fb%3A1649830956492&amp;width=550px" data-tweet-id="1521550153827631106"></iframe>
+
+<br/><br/>
+GOOGLE MAPS
+<iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+
+
+
+
+
+allow-same-origin: permite que a página acessada pelo iframe entenda que as requisições efetuadas são referentes a mesma origem. Por exemplo, um <iframe> com status de atualização de rede social precisa se comunicar com o site de origem com frequência para realizar atualizações. Ao dar essa permissão, o navegador não considera essas requisições como sendo de origem cruzada, o que causaria falha na execução da página;
+allow-top-navigation: permite a navegação na página acessada no <iframe> para o nível superior;
+allow-forms: permite que formulários dentro do elemento <iframe> sejam submetidos;
+allow-popups: aceita a abertura de janelas modais;
+allow-scripts: autoriza a execução de scripts;
+allow-pointer-lock: o movimento do mouse gera diferentes tipos de evento no navegador, como o mouseup(), click(), entre outros, que podem ser utilizados por códigos maliciosos para executar ações indevidas. Por isso, esse é um tipo de bloqueio imposto pelo atributo sandbox e a condição allow-pointer-lock permite a utilização desses eventos.
