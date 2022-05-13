@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+	<title>nome abreviado</title>
+	<style>
+		.s0 { fill: #1bb01b } 
+		.s1 { fill: none;stroke: #00ff00;stroke-width: 13 } 
+	</style>
+	<path id="Path 0" fill-rule="evenodd" class="s0" d="m30 71h56.5l13.5 13.5v38l-13.5 13.5h-32.5v34h-24zm26 46l22.5-0.5 0.4-25.5h-22.9zm60-49h24v40h25v-40h24v99h-24v-40h-25v40h-24z"/>
+	<path id="Forma 1" class="s1" d="m20.7 50c10.3-10.4 23.6-17 32-15.4 8.3 1.7 17-13.3 28-15.3 11-2 32.3 3 38.3-0.7 6-3.7 24 17.4 31.7 13.4 7.6-4.1 27.6 10 32 15.6"/>
+</svg>

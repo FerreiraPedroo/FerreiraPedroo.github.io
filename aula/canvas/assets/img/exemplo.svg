@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+	<title>Novo Projeto</title>
+	<defs>
+		<linearGradient id="g1" x1="712.9" y1="298.5" x2="1107.1" y2="298.5" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#000000" stop-opacity=".6"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { stroke: #ff0000;stroke-width: 22 } 
+		.s1 { fill: url(#g1);stroke: #ff0000;stroke-width: 22 } 
+	</style>
+	<path id="Forma 1" class="s0" d="m376 259.8l248 14 2 256.2-386 14z"/>
+	<path id="Forma 2" class="s1" d="m756 117h308v363h-308z"/>
+	<ellipse id="Forma 3" class="s0" cx="915" cy="289.5" rx="113" ry="116.5"/>
+</svg>
