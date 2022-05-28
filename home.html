@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -7,13 +8,13 @@
   <meta name="description" content="Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="./styles.css" rel="stylesheet">
+  <link href="./assets/css/styles2.css" rel="stylesheet">
   <title>Pedro Henrique - Portfolio</title>
 </head>
+
 <body>
 
   <header>
-    <h1 id="title-name">PEDRO HENRIQUE DE ASSIS FERREIRA</h1>
     <nav>
       <div class="nav-menu">GAMES</div>
       <div class="nav-menu">SITES</div>
@@ -23,13 +24,60 @@
       <div class="nav-menu">FOTOS</div>
     </nav>
   </header>
+
   <main>
+
+    <div id="hero">
+      <div id="hero-photo">
+        <div id="hero-bg-gradient"></div>
+        <img id="photo" src="./assets/img/photo-removebg-preview.png" />
+      </div>
+      <div id="name-box">
+        <div id="name-around">Olá, eu sou</div>
+        <p id="name">Pedro Ferreira</p>
+        <p id="name-around">Desenvolvedor Web Full-Stack</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="info-title">Sobre</div>
+      <div class="info-description">
+        Sou um desenvolvedor full-stack apaixonado por tecnologia, desafios e colaboração. Amo estudar e é um dos
+        grandes
+        motivos de eu amar tanto essa área, sei que qualquer coisa que quiser aprender vou consegu, graças a grande
+        quantidade de conteúdos livres que existem na internet hoje.<br /><br />
+        Minha principal linguagem de programação é JavaScript, conheço a biblioteca JQuery, tenho ótimo conhecimento em
+        React e em suas ferramentas,
+        como: React Hooks, Context API. Para estilização sei utilizar tanto o CSS puro, como styled-components e
+        BootStrap. Trabalho com Git/GitHub diáriamente, faço prototipagem no Figma e caso preciso apresentação no
+        Canva.<br /><br />
+        Atualmente estou me aprofundando no back-end, com MongoDB, Redis, NodeJs, Express.js e estou estudando Next.js e
+        TypeScript por conta própria.
+      </div>
+    </div>
+
+
+    <div class="info">
+      <div class="info-title">Tecnologias</div>
+      <div class="info-description">
+        HTML5, CSS3, React, TypeScript, Styled components, NodeJS, Express, Next, Postegree, MongoDB, RedisDB.
+      </div>
+    </div>
+
+
+    <div class="info">
+      <div class="info-title">Projetos</div>
+      <div class="info-description">
+
       <article id="tic-tac-toe">
         <div>
           <h2>TIC-TAC-TOE</h2>
           <img src="games/tic-tac-toe/tic-tac-toe.png" />
-          <p>O jogo da velha ou jogo do galo ou três em linha é um jogo e/ou passatempo popular. É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido. <span><a href="https://pt.wikipedia.org/wiki/Jogo_da_velha">Wikipédia</a></span></span></p>
-          <p class="play-game"><a href="https://github.com/FerreiraPedroo/TicTacToe-JS" class="play-game nav-menu">Repositório</a></p>
+          <p>O jogo da velha ou jogo do galo ou três em linha é um jogo e/ou passatempo popular. É um jogo de regras
+            extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido.
+            <span><a href="https://pt.wikipedia.org/wiki/Jogo_da_velha">Wikipédia</a></span></span></p>
+          <p class="play-game"><a href="https://github.com/FerreiraPedroo/TicTacToe-JS"
+              class="play-game nav-menu">Repositório</a></p>
         </div>
         <div>
           <p class="play-game">
@@ -44,22 +92,27 @@
         <div>
           <h2>LIVRARIA IPSUM</h2>
           <img src="desafios/livrariaipsum/livrariaipsum.png" />
-          <p>O desafio consistiu em quatro etapas, onde primeiro deve ser escolhido um livro, depois a página é escolhida aleatoriamente e na página escolhida deve ser selecionada uma letra do alfabeto...</p>
+          <p>O desafio consistiu em quatro etapas, onde primeiro deve ser escolhido um livro, depois a página é
+            escolhida
+            aleatoriamente e na página escolhida deve ser selecionada uma letra do alfabeto...</p>
         </div>
         <div>
           <p class="play-game"><a href="desafios/livrariaipsum/index.html" class="play-game nav-menu">JOGAR</a></p>
-      </div>
+        </div>
       </article>
 
       <article id="calculadora">
         <div>
           <h2>CALCULADORA</h2>
           <img src="desafios/calculadora/calculadora.png" />
-          <p>Calculadora feita em JavaScript, utilizando classes como introdução a Programação Orientada a Objetos - POO.</p>
+          <p>Calculadora feita em JavaScript, utilizando classes como introdução a Programação Orientada a Objetos -
+            POO.
+          </p>
         </div>
 
         <div>
-          <p class="play-game"><a href="https://github.com/FerreiraPedroo/Calculadora-JavaScript" class="play-game nav-menu">Repositório</a></p>
+          <p class="play-game"><a href="https://github.com/FerreiraPedroo/Calculadora-JavaScript"
+              class="play-game nav-menu">Repositório</a></p>
           <p class="play-game">
             ABRIR ⇒
             <a href="desafios/calculadora/index.html" class="play-game nav-menu">v1.1</a>
@@ -68,8 +121,18 @@
         </div>
       </article>
 
+      </div>
+    </div>
+
+
+
+
+
+
+
   </main>
   <footer></footer>
   <script src="./script.js"></script>
 </body>
+
 </html>
