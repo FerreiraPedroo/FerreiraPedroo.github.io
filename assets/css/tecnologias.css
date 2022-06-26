@@ -4,6 +4,7 @@
   font-family: Helvetica;
   box-sizing: border-box;
   user-select: none;
+  color: #fff;
   background-color: #000033;
   /* border: 1px solid green; */
 }
@@ -11,11 +12,9 @@
 body {
   display: flex;
 }
-/* ---------------------------------------------------------- */
+
 header {
-
 }
-
 header h1 {
   width: 100%;
   text-align: center;
@@ -43,67 +42,27 @@ nav {
   transform: scale(1.05);
 }
 
-/* ---------------------------------------------------------- */
 main {
+  width: 100%;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px 15px;
 }
 
-/* ---------------------------------------------------------- */
-#hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.logo-js {
+  width: 96px;
+  height: 96px;
 }
-#hero-photo {
-  display: flex;
+.logo-php {
+  width: 128px;
+  height: 96px;
 }
-#hero-bg-gradient {
-  position: relative;
-  height: 300px;
-  width: 261px;
-  left: 260px;
-  background-color: transparent;
-  border-radius: 50%;
-  border-bottom: 0;
-  border-left: 0px;
-  border-right: 0px;
-  box-shadow: -25px -25px 4px white, 0 -30px 26px #3366ff;
-  margin-top: 30px;
-}
-#photo {
-  width: 261px;
-  height: 400px;
-}
-#name-box {
-  min-width: 480px;
-  margin-top: 160px;
-  margin-left: 48px;
-}
-#name-around {
-  height: 100%;
-  color: GhostWhite;
-  font-size: 22px;
-  text-align: center;
-}
-#name {
-  height: 100%;
-  color: GhostWhite;
-  font-size: 54px;
-  text-align: center;
-  font-weight: bold;
-  margin: 20px 0;
-  background: linear-gradient(to right, #3366ff 0%, #99ccff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-react {
+  width: 160px;
+  height: 96px;
 }
 
-/* ---------------------------------------------------------- */
 .info {
   width: 100%;
-  padding: 40px;
+  padding: 40px 20px;
 }
 .info-title {
   font-size: 30px;
@@ -113,20 +72,18 @@ main {
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
 }
-.info-description {
+.info-tecnology {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  color: #ffffff;
-  padding-left: 18px;
-  margin-bottom: 8px;
-
+  padding: 40px;
   gap: 20px;
 }
 
-/* ---------------------------------------------------------- */
+.card-list {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
 article {
   min-width: 300px;
   width: 300px;
@@ -134,8 +91,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 6px white;
+  border-radius: 4px;
 }
 article h2 {
   text-align: center;

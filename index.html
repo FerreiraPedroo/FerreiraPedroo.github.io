@@ -3,34 +3,131 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React, PHP, NodeJS">
   <meta name="author" content="Pedro Henrique de Assis Ferreira">
   <meta name="description" content="Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Portfolio - Pedro Henrique">
-  <meta property="og:image" content="./assets/img/home-bg.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="./assets/css/styles.css" rel="stylesheet">
   <title>Pedro Henrique - Portfolio</title>
 </head>
 
-
-
-
 <body>
 
-  <div id="container">
-    <div id="login-container">
-      <div class="text">
-        <a href="./home.html" >
-          PEDRO HENRIQUE DE ASSIS FERREIRA
-          <br />
-          portfólio
-        </a>
+  <header>
+    <nav>
+      <div class="nav-menu" onclick='window.location.href = "./tecnologias.html"'>Tecnologias</div>
+      <div class="nav-menu" onclick='window.location.href = "./games.html"'>Games</div>
+      <div class="nav-menu" onclick='window.location.href = "./sites.html"'>Sites</div>
+      <div class="nav-menu" onclick='window.location.href = "./webapp.html"'>WebApp</div>
+      <div class="nav-menu" onclick='window.location.href = "./desafios.html"'>Desafios</div>
+      <div class="nav-menu" onclick='window.location.href = "./prototipagem.html"'>Prototipagem</div>
+      <div class="nav-menu" onclick='window.location.href = "./fotos.html"'>Fotos</div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="hero">
+      <div id="hero-photo">
+        <div id="hero-bg-gradient"></div>
+        <img id="photo" src="./assets/img/photo-removebg-preview.png" />
+      </div>
+      <div id="name-box">
+        <div id="name-around">Olá, eu sou</div>
+        <p id="name">Pedro Ferreira</p>
+        <p id="name-around">Desenvolvedor Web Full-Stack</p>
       </div>
     </div>
-  </div>
-  <!-- <script src="./script.js"></script> -->
+
+    <div class="info">
+      <div class="info-title">Sobre</div>
+      <div class="info-description">
+        Sou um desenvolvedor full-stack apaixonado por tecnologia, desafios e colaboração. Amo estudar e é um dos
+        grandes
+        motivos de eu amar tanto essa área, sei que qualquer coisa que eu quiser aprender vou conseguir, graças a grande
+        quantidade de conteúdos livres que existem na internet hoje.<br /><br />
+        Minha principal linguagem de programação é JavaScript e PHP, conheço a biblioteca JQuery, tenho ótimo
+        conhecimento em
+        React e em suas ferramentas,
+        como: React Hooks, Context API. Para estilização sei utilizar tanto o CSS puro, como styled-components e
+        BootStrap. Trabalho com Git/GitHub diariamente, faço prototipagem no Figma e caso preciso apresentação no
+        Canva.<br /><br />
+        Atualmente estou me aprofundando no back-end, com MongoDB, Redis, NodeJs, Express.js e estou estudando Next.js e
+        TypeScript por conta própria.
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="info-title">Tecnologias</div>
+      <div class="info-description">
+        HTML5, CSS3, JavaScript, React, NodeJS, Express, Postegree, MongoDB, RedisDB, TypeScript, Styled components, PHP.
+      </div>
+    </div>
+
+    <!-- <div class="info">
+      <div class="info-title">Projetos</div>
+      <div class="info-description">
+
+        <article id="tic-tac-toe">
+          <div>
+            <img src="games/tic-tac-toe/tic-tac-toe.png" />
+            <h2>TIC-TAC-TOE</h2>
+            <p>O jogo da velha ou jogo do galo ou três em linha é um jogo e/ou passatempo popular. É um jogo de regras
+              extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido.
+              <span><a href="https://pt.wikipedia.org/wiki/Jogo_da_velha">Wikipédia</a></span></span>
+            </p>
+            <p class="play-game"><a href="https://github.com/FerreiraPedroo/TicTacToe-JS"
+                class="play-game options">Repositório</a></p>
+          </div>
+          <div>
+            <p class="play-game">
+              JOGAR ⇒
+              <a href="games/tic-tac-toe/tic-tac-toe.html" class="play-game options">v2.0</a>
+              <a href="games/tic-tac-toe/v1.0/index.html" class="play-game options">v1.0</a>
+            </p>
+          </div>
+        </article>
+
+        <article id="livraria-ipsum">
+          <div>
+            <img src="desafios/livrariaipsum/livrariaipsum.png" />
+            <h2>LIVRARIA IPSUM</h2>
+            <p>O desafio consistiu em quatro etapas, onde primeiro deve ser escolhido um livro, depois a página é
+              escolhida
+              aleatoriamente e na página escolhida deve ser selecionada uma letra do alfabeto...</p>
+          </div>
+          <div>
+            <p class="play-game"><a href="desafios/livrariaipsum/index.html" class="play-game options">JOGAR</a></p>
+          </div>
+        </article>
+
+        <article id="calculadora">
+          <div>
+            <img src="desafios/calculadora/calculadora.png" />
+            <h2>CALCULADORA</h2>
+            <p>Calculadora feita em JavaScript, utilizando classes como introdução a Programação Orientada a Objetos -
+              POO.
+            </p>
+          </div>
+
+          <div>
+            <p class="play-game"><a href="https://github.com/FerreiraPedroo/Calculadora-JavaScript"
+                class="play-game options">Repositório</a></p>
+            <p class="play-game">
+              ABRIR ⇒
+              <a href="desafios/calculadora/index.html" class="play-game options">v1.1</a>
+              <a href="desafios/calculadora/v1.0/index.html" class="play-game options">v1.0</a>
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div> -->
+
+  </main>
+  <footer></footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
