@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Águas Encanadas</title>
+  <style rel="stylesheet" src="./aguasEncanadas.css">
+    * {
+      color: gainsboro;
+      font-size: 10px;
+      user-select: none;
+    }
+    body {
+      display: flex;
+      justify-content: flex-start;
+    }
+    p {
+      font-size: 20px;
+      color: black;
+      width: 100%;
+      margin: 10px;
+    }
+    input {
+      font-size: 20px;
+      color: black;
+      width: 48px;
+      height: 32px;
+      margin: 10px;
+    }
+
+    .cell-line {
+      display: flex;
+    }
+
+    .cell {
+      width: 32px;
+      height: 32px;
+    }
+
+    .cell-center {
+      background-color: black;
+    }
+
+    .cell-right-1 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .cell-down-1 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .cell-left-1 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .cell-up-1 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .cell-right-2 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .cell-down-2 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .cell-left-2 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .cell-up-2 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .cell-right-3 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.60);
+    }
+
+    .cell-down-3 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.60);
+    }
+
+    .cell-left-3 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.60);
+    }
+
+    .cell-up-3 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.60);
+    }
+
+    .cell-right-4 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.40);
+    }
+
+    .cell-down-4 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.40);
+    }
+
+    .cell-left-4 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.40);
+    }
+
+    .cell-up-4 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.40);
+    }
+
+    .cell-right-5 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.20);
+    }
+
+    .cell-down-5 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.20);
+    }
+
+    .cell-left-5 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.20);
+    }
+
+    .cell-up-5 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.20);
+    }
+
+    .cell-right-6 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.10);
+    }
+
+    .cell-down-6 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.10);
+    }
+
+    .cell-left-6 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.10);
+    }
+
+    .cell-up-6 {
+      width: 32px;
+      height: 32px;
+      background-color: rgba(0, 0, 0, 0.10);
+    }
+
+    body div div div {
+      min-width: 48px;
+      min-height: 48px;
+      background-color: gainsboro;
+    }
+
+    .block {
+      min-width: 32px;
+      min-height: 32px;
+      border: 1px solid green;
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="matriz-board"></div>
+
+  <div>
+    <p>HTML Terrain 0</p>
+    <input type="number" name="number" id="cell-size" value="4" onblur="changeCellFadeSize(this.value)">
+    <input type="number" name="number" id="cell-fade" value="1" onchange="changeCellFadePoint(this.value)">
+    <input type="color" name="color" id="cell-color" value="#ff0000" onchange="changeCellColor(this.value)">
+  </div>
+
+  <script type="text/javascript" src="./aguasEncanadas.js"></script>
+</body>
+
+</html>
